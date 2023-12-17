@@ -28,6 +28,7 @@
         border-radius: 10px;
         transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
         position: relative;
+        animation: rotateBorderColor 10s infinite linear;
       }
 
       .profile-image {
@@ -110,6 +111,30 @@
 
       .business-card:hover .skill-card {
         height: 82%;
+      }
+
+      /* Add keyframes for rotating border color */
+      @keyframes rotateBorderColor {
+        0% {
+          /* border-color: #ff0000; */
+          box-shadow: 0 0 40px rgba(255, 0, 0, 0.5);
+        }
+        25% {
+          /* border-color: #ffcc00; */
+          box-shadow: 0 0 40px rgba(255, 204, 0, 0.5);
+        }
+        50% {
+          /* border-color: #00ff00; */
+          box-shadow: 0 0 40px rgba(0, 255, 0, 0.5);
+        }
+        75% {
+          /* border-color: #3399ff; */
+          box-shadow: 0 0 40px rgba(51, 153, 255, 0.5);
+        }
+        100% {
+          /* border-color: #ff0000; */
+          box-shadow: 0 0 40px rgba(255, 0, 0, 0.5);
+        }
       }
     </style>
   </head>
